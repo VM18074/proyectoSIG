@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sigVentas.apps.SigventasConfig',
+    'django_seed'
 ]
 
 MIDDLEWARE = [
