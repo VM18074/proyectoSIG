@@ -1,140 +1,132 @@
 [
-    {
+  {
       "model": "sigVentas.Usuario",
       "pk": 1,
       "fields": {
-        "nombre_usuario": "Ariel Morales",
-        "correo_electronico": "mm18226@ues.edu.sv",
-        "usuario": "mm18226",
-        "password": "1234"  
+          "nombre_usuario": "Ariel Morales",
+          "correo_electronico": "mm18226@ues.edu.sv",
+          "usuario": "mm18226",
+          "password": "1234"
       }
-    },
-    {
+  },
+  {
       "model": "sigVentas.Usuario",
       "pk": 2,
       "fields": {
-        "nombre_usuario": "Javier Velasquez",
-        "correo_electronico": "vm18074@ues.edu.sv",
-        "usuario": "vm18074",
-        "password": "1234" 
+          "nombre_usuario": "Javier Velasquez",
+          "correo_electronico": "vm18074@ues.edu.sv",
+          "usuario": "vm18074",
+          "password": "1234"
       }
-    },
-    {
-        "proveedores": [
-          {
-            "model": "sigVentas.Proveedor",
-            "pk": 1,
-            "fields": {
-              "nombre_proveedor": "Libros y Más al Mayor",
-              "nombre_contacto": "Sarah Jones",
-              "correo_electronico": "ventas@librosymas.com",
-              "telefono": "(555) 555-1234"
-            }
-          },
-          {
-            "model": "sigVentas.Proveedor",
-            "pk": 2,
-            "fields": {
-              "nombre_proveedor": "Distribuidores Literarios",
-              "nombre_contacto": "David Lee",
-              "correo_electronico": "david.lee@distribuidoresliterarios.com",
-              "telefono": "(555) 555-5678"
-            }
-          },
-          {
-            "model": "sigVentas.Proveedor",
-            "pk": 3,
-            "fields": {
-              "nombre_proveedor": "Almacén de Libros Infantiles",
-              "nombre_contacto": "Emily Garcia",
-              "correo_electronico": "emily.garcia@librosinfantiles.com",
-              "telefono": "(555) 555-9012"
-            }
-          }
-        ],
-        "pedidos": [
-          {
-            "model": "sigVentas.Pedido",
-            "pk": 1,
-            "fields": {
-              "nombre_cliente": "John Smith",
-              "correo_electronico": "john.smith@email.com",
-              "direccion_envio": "123 Calle Principal, Ciudad, CA 12345",
-              "fecha_pedido": "2024-02-28",
-              "estado_pedido": "En proceso",
-              "precio_total": 49.99
-            }
-          },
-          {
-            "model": "sigVentas.Pedido",
-            "pk": 2,
-            "fields": {
-              "nombre_cliente": "Jane Doe",
-              "correo_electronico": "jane.doe@email.com",
-              "direccion_envio": "456 Calle Olmo, Ciudad, CA 12345",
-              "fecha_pedido": "2024-02-27",
-              "estado_pedido": "Enviado",
-              "precio_total": 37.98
-            }
-          },
-          {
-            "model": "sigVentas.Pedido",
-            "pk": 3,
-            "fields": {
-              "nombre_cliente": "Michael Brown",
-              "correo_electronico": "michael.brown@email.com",
-              "direccion_envio": "789 Calle Roble, Ciudad, CA 12345",
-              "fecha_pedido": "2024-02-26",
-              "estado_pedido": "En espera de pago",
-              "precio_total": 24.99
-            }
-          }
-        ],
-        "productos": [
-          {
-            "model": "sigVentas.Producto",
-            "pk": 1,
-            "fields": {
-              "nombre_producto": "El Señor de los Anillos (Trilogía)",
-              "descripcion": "Caja que contiene las novelas clásicas de fantasía de J.R.R. Tolkien.",
-              "categoria": "Ficción",
-              "precio": 49.99,
-              "stock": 10
-            }
-          },
-          {
-            "model": "sigVentas.Producto",
-            "pk": 2,
-            "fields": {
-              "nombre_producto": "La Guía del Autoestopista Galáctico",
-              "descripcion": "Novela de ciencia ficción y comedia de Douglas Adams.",
-              "categoria": "Ficción",
-              "precio": 12.99,
-              "stock": 5
-            }
-          },
-          {
-            "model": "sigVentas.Producto",
-            "pk": 11,
-            "fields": {
-              "nombre_producto": "Matar a un Ruiseñor",
-              "descripcion": "Novela clásica de Harper Lee.",
-              "categoria": "Ficción",
-              "precio": 11.99,
-              "stock": 9
-            }
-          },
-          {
-            "model": "sigVentas.Producto",
-            "pk": 12,
-            "fields": {
-              "nombre_producto": "Dune",
-              "descripcion": "Novela de ciencia ficción de Frank Herbert.",
-              "categoria": "Ficción",
-              "precio": 17.99,
-              "stock": 4
-            }
-          }
-        ]
+  },
+  {
+      "model": "sigVentas.Proveedor",
+      "pk": 1,
+      "fields": {
+          "nombre_proveedor": "Libros y Más al Mayor",
+          "nombre_contacto": "Sarah Jones",
+          "correo_electronico": "ventas@librosymas.com",
+          "numero_telefonico": "(555) 555-1234"
       }
-  ]
+  },
+  {
+      "model": "sigVentas.Proveedor",
+      "pk": 2,
+      "fields": {
+          "nombre_proveedor": "Distribuidores Literarios",
+          "nombre_contacto": "David Lee",
+          "correo_electronico": "david.lee@distribuidoresliterarios.com",
+          "numero_telefonico": "(555) 555-5678"
+      }
+  },
+  {
+      "model": "sigVentas.Proveedor",
+      "pk": 3,
+      "fields": {
+          "nombre_proveedor": "Almacén de Libros Infantiles",
+          "nombre_contacto": "Emily Garcia",
+          "correo_electronico": "emily.garcia@librosinfantiles.com",
+          "numero_telefonico": "(555) 555-9012"
+      }
+  },
+  {
+      "model": "sigVentas.Pedido",
+      "pk": 1,
+      "fields": {
+          "nombre_cliente": "John Smith",
+          "correo_electronico": "john.smith@email.com",
+          "direccion_envio": "123 Calle Principal, Ciudad, CA 12345",
+          "fecha_pedido": "2024-02-28",
+          "estado_pedido": "En proceso",
+          "precio_total": 49.99
+      }
+  },
+  {
+      "model": "sigVentas.Pedido",
+      "pk": 2,
+      "fields": {
+          "nombre_cliente": "Jane Doe",
+          "correo_electronico": "jane.doe@email.com",
+          "direccion_envio": "456 Calle Olmo, Ciudad, CA 12345",
+          "fecha_pedido": "2024-02-27",
+          "estado_pedido": "Enviado",
+          "precio_total": 37.98
+      }
+  },
+  {
+      "model": "sigVentas.Pedido",
+      "pk": 3,
+      "fields": {
+          "nombre_cliente": "Michael Brown",
+          "correo_electronico": "michael.brown@email.com",
+          "direccion_envio": "789 Calle Roble, Ciudad, CA 12345",
+          "fecha_pedido": "2024-02-26",
+          "estado_pedido": "En espera de pago",
+          "precio_total": 24.99
+      }
+  },
+  {
+      "model": "sigVentas.Producto",
+      "pk": 1,
+      "fields": {
+          "nombre_producto": "El Señor de los Anillos (Trilogía)",
+          "descripcion": "Caja que contiene las novelas clásicas de fantasía de J.R.R. Tolkien.",
+          "categoria": "Ficción",
+          "precio": 49.99,
+          "stock": 10
+      }
+  },
+  {
+      "model": "sigVentas.Producto",
+      "pk": 2,
+      "fields": {
+          "nombre_producto": "La Guía del Autoestopista Galáctico",
+          "descripcion": "Novela de ciencia ficción y comedia de Douglas Adams.",
+          "categoria": "Ficción",
+          "precio": 12.99,
+          "stock": 5
+      }
+  },
+  {
+      "model": "sigVentas.Producto",
+      "pk": 11,
+      "fields": {
+          "nombre_producto": "Matar a un Ruiseñor",
+          "descripcion": "Novela clásica de Harper Lee.",
+          "categoria": "Ficción",
+          "precio": 11.99,
+          "stock": 9
+      }
+  },
+  {
+      "model": "sigVentas.Producto",
+      "pk": 12,
+      "fields": {
+          "nombre_producto": "Dune",
+          "descripcion": "Novela de ciencia ficción de Frank Herbert.",
+          "categoria": "Ficción",
+          "precio": 17.99,
+          "stock": 4
+      }
+  }
+]
