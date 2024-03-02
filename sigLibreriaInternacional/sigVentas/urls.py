@@ -1,7 +1,9 @@
-from django.urls import path
+from django.urls import path, include  # Update to import the recommended functions
+from rest_framework import routers
 
-from . import views
+router = routers.DefaultRouter()
 
-urlpatterns = [
-    path("", views.index, name="index"),
+urlpatterns += [
+    path('login/', include('django.contrib.auth.urls')),
+    path('', include('sigVentas.urls')),  # Tu app
 ]
